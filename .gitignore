@@ -1,0 +1,11 @@
+# Private planning and local learning/test evidence
+/OUTLINE.md
+/SCRATCH.md
+/CH1-BRIEF.md
+/STATUS.md
+/PLAN.md
+/local/
+
+# Generated Python files
+__pycache__/
+*.py[cod]

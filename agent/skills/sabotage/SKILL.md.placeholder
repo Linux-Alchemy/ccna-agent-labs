@@ -1,0 +1,12 @@
+# Sabotage procedure — placeholder
+
+Not an operational skill. Replace this file with a validated SKILL.md during skill implementation. The same tutor agent uses this procedure; no subagent is required.
+
+Intended flow:
+1. Confirm the requested exercise scope and an accepted baseline.
+2. Make a disposable copy and create one suitable fault within the allowed scope.
+3. Validate the intended symptom; undo/discard an invalid setup.
+4. Store fault, undo and evidence privately; record the pre-ticket answer commitment.
+5. Present a symptom-only ticket and return to inspection-only tutoring.
+
+Never mutate the accepted baseline or the learner's working build. The learner performs the repair. Pausing or stopping never authorises answer disclosure.

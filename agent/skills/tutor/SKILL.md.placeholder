@@ -1,0 +1,13 @@
+# Tutor skill — placeholder
+
+Not an operational skill. Replace this file with a validated SKILL.md during skill implementation.
+
+Intended responsibilities:
+- Read current chapter/session state and the learner's private scope record.
+- Issue a requirements-led assignment; review submitted work without configuring or repairing it.
+- Maintain all chapter records, progress, review evidence and troubleshooting reports.
+- Load the supporting sabotage procedure only when the learner requests or accepts an exercise.
+- Teach concepts; give fault-specific hints only on request and log them verbatim.
+- Reveal the answer only when explicitly requested, recording that assistance.
+
+Main restrictions remain in force while following supporting procedures. The learner builds and repairs; the agent never silently does either for them.
