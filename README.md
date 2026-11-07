@@ -2,7 +2,7 @@
 
 I build an evolving business network from requirements. One agent assigns and reviews the work, creates optional troubleshooting exercises, and maintains the records. I configure the network and fix the faults.
 
-[Add a sentence about why you wanted this project alongside ordinary build practice.]
+I've created this project to accomplish two things. First is getting in more hands on work as I prepare for my CCNA exam. And second was to find a way to create a more real work like experience. There's real value in building labs for practice, of that there's no doubt. But I was looking for something that might be more similar to what one would see on the job. For example, you get handed a scope and you need to design the network, or maybe there's a network up and running and you're tasked with solving an issue. In this case, for the troubleshooting aspect of the project, I ask the agent to literally break something, not tell me what it is, and to only give me a ticket similar to what a network admin might see, my job then is to figure out what the problem is a fix it. 
 
 ## How it works
 
@@ -19,7 +19,7 @@ I do the networking. One agent handles assignments, reviews and record keeping, 
 
 The records preserve design reasoning, investigation, wrong turns, hints and verification. My work and the agent's contributions stay clearly identified.
 
-[Add one sentence about what you want someone browsing these records to understand about your work.]
+To keep the project honest, I'm keeping records, rather, the agent is keeping records. What was built, what was broken and how it was fixed. If at any point I'm utterly stumped and need more explicit assistance from the agent, then that gets recorded too.
 
 ## Find your way around
 
