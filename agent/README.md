@@ -2,7 +2,7 @@
 
 One Codex agent guides the work. It uses a main tutoring skill and loads a small sabotage procedure only when an exercise is requested. There is no separate saboteur agent.
 
-**Status:** the Packet Tracer scripts and draft templates are available. The two skill files are placeholders, not installed or operational. Full skill setup and a complete learning session are still to be validated.
+**Status:** both skills, Packet Tracer scripts and templates are implemented. The first real chapter-and-ticket cycle is still pending; skill validation is not a claim that live troubleshooting has been completed.
 
 ## Responsibilities
 
@@ -16,8 +16,8 @@ During review, the agent inspects the lab and gives investigation pointers; it d
 
 ## What's here
 
-- [Tutor skill placeholder](skills/tutor/SKILL.md.placeholder): chapter workflow, role and restrictions, reviews and upkeep.
-- [Sabotage skill placeholder](skills/sabotage/SKILL.md.placeholder): scoped fault setup followed by a return to tutoring.
+- [Tutor skill](skills/tutor/SKILL.md): chapter workflow, role and restrictions, reviews and upkeep.
+- [Sabotage skill](skills/sabotage/SKILL.md): scoped fault setup followed by a return to tutoring.
 - [pt.py](scripts/pt.py): inspect topology/configurations, extract command history, lint and export/re-encode XML.
 - [pktcrypto.py](scripts/pktcrypto.py): encoding/decoding helper used by `pt.py`.
 - [Chapter template](templates/chapter.md): assignment, topology, design response and acceptance evidence.
@@ -47,10 +47,19 @@ python agent/scripts/pt.py encode local/lab.xml local/edited-copy.pkt
 
 Do not overwrite an original or accepted baseline. Open the result in Packet Tracer to check it. The tools read saved state; they do not execute the simulation or prove connectivity. Lint findings are investigation leads, not a complete network assessment.
 
-## Reuse the workflow
+## Use with Codex
 
-When the skills are complete, another learner will be able to use them with their own requirements and accepted network. The documented flow will be: load the project skills in Codex, supply a private record of familiar concepts, build from an assignment, request review, then optionally request an exercise.
+Open this repository as the working project in Codex. The checked-in `.agents/skills/` links point to the two skill folders under `agent/skills/`; no global installation is needed. Codex supports repo-local skill folders and symlinks. See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills).
 
-Keep that personal scope record, sealed answers and working copies under the ignored `local/` directory. Keep reusable skill instructions generic. The exact Codex loading procedure is pending validation; the placeholder files must not be installed as finished skills.
+Ask Codex to use **ccna-agent-labs** to review the current chapter or resume an exercise. In clients supporting skill mentions, use `$ccna-agent-labs`. A requested run loads **ccna-agent-labs-sabotage** in the same context. If the skills do not appear, reopen the project/session and check that the relative symlinks resolve.
 
-Separating skill files does not hide tool calls. Exercise setup must avoid exposing the answer through ordinary output, and accidental disclosure must be recorded rather than counted as an independent solve.
+Before assigning new work, the tutor reads `local/learning-scope.md`. For your own use, have the tutor create this private file with your current build concepts, troubleshooting-eligible topics, progress-source locations and the date/evidence of the last check. There is no required provider or curriculum. Keep personal scope sources, sealed answers and working copies under the ignored `local/` directory.
+
+Example requests:
+
+- "Use ccna-agent-labs and give me the Chapter 1 assignment."
+- "Review my saved lab at <path>."
+- "I'd like a troubleshooting session on the accepted chapter."
+- "Pause this ticket" / "Resume my ticket" / "The fix is saved; check it."
+
+The learner builds and repairs; the tutor maintains the records. No accepted baseline means no sabotage session yet. Separating skill files does not hide tool calls: an accidental answer disclosure is logged, not counted as an independent solve.
