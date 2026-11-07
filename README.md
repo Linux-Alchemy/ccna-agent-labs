@@ -27,6 +27,7 @@ The records preserve design reasoning, investigation, wrong turns, hints and ver
 - [Chapter 2: The First Hires](chapters/02-the-first-hires/)
 - [Chapter 3: Separating the Network](chapters/03-separating-the-network/)
 - [Agent overview](agent/README.md) — responsibilities and guidance for reuse.
+- [Use the skills with your own agent](agent/README.md#use-with-your-own-agent) — Codex, Grok, Claude or another host.
 - [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
 
 Each chapter has its own brief, design and acceptance record, with space for a topology screenshot, an accepted Packet Tracer file and a troubleshooting log. Later chapters are provisional.

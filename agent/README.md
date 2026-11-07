@@ -6,7 +6,7 @@ One Codex agent guides the work. It uses a main tutoring skill and loads a small
 
 ## Responsibilities
 
-| Matt | The agent |
+| Learner | The agent |
 |---|---|
 | Designs and configures the network. | Issues requirements and reviews submitted work. |
 | Investigates and repairs faults. | Creates scoped faults on disposable copies when requested. |
@@ -47,13 +47,26 @@ python agent/scripts/pt.py encode local/lab.xml local/edited-copy.pkt
 
 Do not overwrite an original or accepted baseline. Open the result in Packet Tracer to check it. The tools read saved state; they do not execute the simulation or prove connectivity. Lint findings are investigation leads, not a complete network assessment.
 
+## Use with your own agent
+
+Codex is the tested host for this project. For Grok, Claude or another agent, use the same instructions through that host's skill loader if available, or supply the Markdown files directly. Other hosts have not been validated here.
+
+1. **Keep the project together.** Clone or download the repo so the skills can refer to its scripts, templates and chapter records.
+2. **Load the tutor instructions.** Give your agent the [main skill](skills/tutor/SKILL.md) and the project location. If it cannot open local files, attach or paste the instructions and relevant chapter/template material.
+3. **Set your scope privately.** Ask the agent to create `local/learning-scope.md` with concepts you have covered, eligible troubleshooting topics and your progress sources. Keep this personal record out of git.
+4. **Request a chapter review or exercise.** For an exercise, have the same agent read the [sabotage skill](skills/sabotage/SKILL.md) while retaining the main skill's restrictions. You still build and repair the network.
+
+The full workflow needs file access, Python and git execution, plus Packet Tracer checks on your machine. A chat-only agent can discuss supplied material, but cannot edit your local lab or independently verify it. Attaching a skill does not grant those capabilities or hide its tool output.
+
+A starting prompt:
+
+> Read `agent/skills/tutor/SKILL.md` in my project at `<repo path>`, follow it as my lab tutor, and resume from the current chapter record. Ask for any missing scope information before assigning new work.
+
 ## Use with Codex
 
 Open this repository as the working project in Codex. The checked-in `.agents/skills/` links point to the two skill folders under `agent/skills/`; no global installation is needed. Codex supports repo-local skill folders and symlinks. See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills).
 
 Ask Codex to use **ccna-agent-labs** to review the current chapter or resume an exercise. In clients supporting skill mentions, use `$ccna-agent-labs`. A requested run loads **ccna-agent-labs-sabotage** in the same context. If the skills do not appear, reopen the project/session and check that the relative symlinks resolve.
-
-Before assigning new work, the tutor reads `local/learning-scope.md`. For your own use, have the tutor create this private file with your current build concepts, troubleshooting-eligible topics, progress-source locations and the date/evidence of the last check. There is no required provider or curriculum. Keep personal scope sources, sealed answers and working copies under the ignored `local/` directory.
 
 Example requests:
 
