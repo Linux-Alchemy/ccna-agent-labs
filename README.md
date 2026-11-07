@@ -1,32 +1,38 @@
-# CCNA Agent Labs
+# ccna-agent-labs
 
 I build an evolving business network from requirements. One agent assigns and reviews the work, creates optional troubleshooting exercises, and maintains the records. I configure the network and fix the faults.
 
+[Add a sentence about why you wanted this project alongside ordinary build practice.]
+
 ## How it works
 
-**Brief → build → review → optional break/fix → next expansion.**
+The network starts in a solo indie game developer's spare room and grows with the business. Each chapter brings new requirements, design decisions and networking concepts.
 
-A solo game developer's home office grows with the business. Each chapter introduces a reason to expand the network, an assignment, and a record of the design and results. Earlier chapters retain their accepted network snapshots.
+1. Agree on the business need and learning goals.
+2. Get a brief with requirements—not configuration instructions.
+3. Design and build the network, then work through the agent's review.
+4. Preserve the accepted network as a chapter baseline.
+5. Optionally troubleshoot faults introduced on a copy of that baseline.
+6. Expand when ready.
 
-One Codex agent supports the process through two skills: tutoring and sabotage. I make the network decisions, configure the devices and investigate faults. The agent reviews evidence, supplies hints when requested and keeps the documentation. A revealed answer or an unresolved exercise stays in the record.
+I do the networking. One agent handles assignments, reviews and record keeping, with a separate skill for setting up sabotage exercises. It doesn't build the network or repair it for me.
 
-## Current position
+The records preserve design reasoning, investigation, wrong turns, hints and verification. My work and the agent's contributions stay clearly identified.
 
-- **Chapter:** 1 — The Spare Room.
-- **Stage:** assignment drafted; network not built.
-- **Accepted baseline:** none yet.
-- **Next:** complete the agent skills and review the assignment before starting the build.
+[Add one sentence about what you want someone browsing these records to understand about your work.]
 
-## Follow the network
+## Find your way around
 
-| Chapter | Business change | Status |
-|---|---|---|
-| [1 — The Spare Room](chapters/01-the-spare-room/README.md) | A solo developer needs a small working network. | Assignment drafted |
-| [2 — The First Hires](chapters/02-the-first-hires/README.md) | Two remote employees join the business. | Provisional placeholder |
-| [3 — Separating the Network](chapters/03-separating-the-network/README.md) | Staff, visitors and servers need distinct network segments. | Provisional placeholder |
+- [Chapter 1: The Spare Room](chapters/01-the-spare-room/)
+- [Chapter 2: The First Hires](chapters/02-the-first-hires/)
+- [Chapter 3: Separating the Network](chapters/03-separating-the-network/)
+- [Agent overview](agent/README.md) — responsibilities and guidance for reuse.
+- [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
 
-## Explore the agent workflow
+Each chapter has its own brief, design and acceptance record, with space for a topology screenshot, an accepted Packet Tracer file and a troubleshooting log. Later chapters are provisional.
 
-See [agent tools and skills](agent/README.md) for responsibilities, available utilities and the intended reuse workflow.
+## Current status
 
-**Build status:** the inspection scripts are available; skills and lab assets are pending. This is a working overview, with final narrative copy still to come.
+The repository scaffold is in place through Chapter 3, and both agent skills are implemented and discoverable in Codex. Lab builds and the first live chapter-and-ticket cycle are still pending; no chapter network or troubleshooting session has been completed. Missing screenshots and Packet Tracer files are marked with `.placeholder` files.
+
+This is a project in progress, not a ready-to-run lab package.
