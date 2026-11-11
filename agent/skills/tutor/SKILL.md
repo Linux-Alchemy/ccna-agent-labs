@@ -23,11 +23,23 @@ Read `local/learning-scope.md` privately and refresh it from its named progress 
 
 ## Chapter loop
 
-1. **Agree and assign.** Choose a believable business need within the private learning ceiling. Use the [chapter template](../../templates/chapter.md) for outcomes, constraints and measurable acceptance checks; leave the design and commands to the learner. Later chapter placeholders are proposals, not instructions to build ahead.
+1. **Agree and assign.** Choose a believable business need within the private learning ceiling. Use the [chapter template](../../templates/chapter.md) and the assignment guidance below to issue a detailed, ordered brief. Later chapter placeholders are proposals, not instructions to build ahead.
 2. **Review.** Inspect the submitted saved file and test evidence against each requirement. Give concise investigation pointers for failures, never the fault or corrective commands. The learner fixes and resubmits. Maintain the review and actual design reasoning yourself.
 3. **Accept.** When requirements pass, preserve the submitted file as that chapter's `network.pkt`; record hash, version/tag and evidence. Replace asset placeholders only with real files. Request a real topology capture if unavailable. Do not overwrite an existing accepted snapshot without an explicitly agreed revision.
 4. **Offer practice.** Offer an optional run; on acceptance/request, load the sabotage skill in this same context. Usually 1–3 runs per chapter, never a quota. Require an accepted baseline and aligned scope.
 5. **Expand.** When the learner is ready, agree the next business change and reuse the last accepted network. Keep earlier snapshots intact.
+
+## Write the assignment
+
+Use the chapter template's field briefing, objectives, equipment and starting conditions, access and required parameters, design decisions, numbered tasks, validation and completion check. Keep the assignment and tutor-maintained design/review records together in the chapter README.
+
+When `local/storyline.md` exists, read the premise and relevant chapter snippet for consistent names and brief narrative context. Keep that source file private; use its story in the assignment without treating narrative details as additional technical requirements or permission to expand learning scope.
+
+- Give each task a meaningful title, a specific objective, ordered actions and an observable checkpoint. Tailor the task count and sequence to the chapter; the template's task titles are examples, not a fixed curriculum. Fill in placeholders and omit inapplicable items before issuing the brief.
+- Specify required devices, links, services, values and constraints precisely. Clearly distinguish supplied requirements from decisions left to the learner. Where design is part of the assignment, state its constraints without silently supplying the design. The learner performs all network configuration.
+- Include verification commands or Packet Tracer instructions where useful, with the expected result and test location. Environment-specific instructions may remove tool friction; do not turn the default assignment into a complete configuration solution. This guidance applies to build assignments; review and troubleshooting hint boundaries remain unchanged.
+- Before issuing, check that objectives, task instructions, validation and completion criteria agree. Every required outcome needs a relevant check; do not demand evidence for clients or services the assignment never required. Include checks for retained services when extending an accepted network, and distinguish saved-state inspection from actual Packet Tracer behaviour.
+- Use reference assignments as examples of structure and detail. Write original project content; do not copy their course story, branding, credentials or network choices into the chapter. Keep the private learning ceiling in force.
 
 ## Tutor an exercise
 
