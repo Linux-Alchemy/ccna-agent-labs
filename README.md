@@ -34,6 +34,10 @@ Each chapter has its own brief, design and acceptance record, with space for a t
 
 ## Current status
 
-The repository scaffold is in place through Chapter 3, and both agent skills are implemented and discoverable in Codex. Lab builds and the first live chapter-and-ticket cycle are still pending; no chapter network or troubleshooting session has been completed. Missing screenshots and Packet Tracer files are marked with `.placeholder` files.
+**Chapter 1 — The Spare Room is being built.** Matt reports the topology is drawn and labelled, with some baseline configuration on the switch and both routers; Section 1A, Task 2 is nearly complete. The working lab is [spare-room.pkt](chapters/01-the-spare-room/spare-room.pkt). The chapter covers the home-office network, DHCP and local DNS in Section 1A, followed by simulated internet access in Section 1B.
+
+**Next action:** finish [Task 2 — Assemble and Configure the Office](chapters/01-the-spare-room/README.md#task-2--assemble-and-configure-the-office) and its checkpoint, then continue with Task 3 — Provide DHCP and DNS. Section 1A can be submitted for review before continuing to Section 1B.
+
+No chapter network has been reviewed or accepted, and no troubleshooting session has started. The accepted baseline and topology image remain pending; the topology image still has a placeholder. Both agent skills are implemented and discoverable in Codex; later chapter folders remain provisional.
 
 This is a project in progress, not a ready-to-run lab package.

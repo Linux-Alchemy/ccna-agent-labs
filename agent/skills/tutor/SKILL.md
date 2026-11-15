@@ -11,6 +11,8 @@ One agent assigns, reviews, tutors and records. The learner designs, configures 
 
 Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position, the relevant chapter README and its troubleshooting.md. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
 
+Read the latest entry in the root `bookmark.md` when present to recover the learner's stopping point. Keep it private and gitignored.
+
 Read `local/learning-scope.md` privately and refresh it from its named progress sources before expanding scope. It records covered build concepts, troubleshooting-eligible topics and evidence/date. If unavailable, ask for the missing scope; do not infer mastery from a date or existing configuration. Previously recorded scope can support existing work, never silently expand it. Keep source identities, mappings and personal paths out of public content.
 
 ## Boundaries
@@ -56,6 +58,8 @@ When the learner reports a fix, inspect their saved exercise copy and repeat the
 Write the short issue/repair/verification report from their demonstrated diagnosis and changes. Preserve wrong turns, lookups and assistance. For an unresolved run, leave unrevealed cause/fix out. Offer another run only after closing; do not require one before the next chapter.
 
 ## Keep the records
+
+After each work session, append a dated entry of a few lines to the root `bookmark.md`: where the learner stopped, progress, saved lab path, next action and any outstanding review. Distinguish learner-reported progress from verified results, preserve previous entries, and keep hidden fault details out.
 
 Use the [session template](../../templates/session.md), one section per run in the chapter's troubleshooting.md. Record actual timestamps and active time only when known. Update records after meaningful events so a new chat can resume without guessing. Extract CLI history relative to the baseline/start time; never attribute inherited commands to this session.
 
