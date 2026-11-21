@@ -1,6 +1,8 @@
 # Chapter <number> — <title>: Build Record
 
-[Chapter summary](README.md) · [Assignment](assignment.md) · [Troubleshooting](troubleshooting.md)
+[Chapter summary](README.md) · [Assignment](assignment.md)
+
+<!-- Add a Troubleshooting link only when the chapter has an index. -->
 
 > **Current outcome:** <pending / under review / accepted; date when known>
 
@@ -9,14 +11,16 @@ The tutor maintains this record. Dated entries preserve the state at the time; t
 ## Baseline Identity
 
 - **Starting baseline:** <previous chapter/version/hash or new network>.
-- **Working lab:** <confirmed saved path/link, or pending>.
-- **Accepted lab:** <link network.pkt only after acceptance; otherwise pending>.
+- **Working lab:** <confirmed saved location or pending; later working copies stay under ignored local/>.
+- **Accepted lab:** <link the learner's descriptive filename only after acceptance; otherwise pending. One canonical chapter file, no generic duplicate>.
 - **Accepted version and SHA-256:** <commit/tag and hash after acceptance; otherwise pending>.
 - **Topology:** [Chapter topology](README.md#topology-and-accepted-lab).
 
 ## Design Response
 
 <Actual addressing/connection table, what changed and what was retained, and the learner's reasons. Capture decisions from evidence and conversation; never invent them. Record agreed deviations from the assignment with their reasons.>
+
+<Record any explicitly authorised previews/guided setup or lab-only choices so they are not mistaken for independently mastered material or repeatedly flagged as unresolved requirements. Keep course identities and progress sources private.>
 
 ## Review History
 

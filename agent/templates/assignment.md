@@ -1,6 +1,8 @@
 # Chapter <number> — <title>: Assignment
 
-[Chapter summary](README.md) · [Build record](build-record.md) · [Troubleshooting](troubleshooting.md)
+[Chapter summary](README.md) · [Build record](build-record.md)
+
+<!-- Add a Troubleshooting link only when the chapter has an index. -->
 
 Read the [Field Briefing](README.md#field-briefing) for the business context. This file owns the requirements, tasks and completion checklist; the build record owns design decisions and review evidence.
 

@@ -8,8 +8,7 @@
 
 [View the topology](README.md#topology-and-accepted-lab).
 
-- **Accepted Packet Tracer baseline:** [network.pkt](network.pkt) — preserve unchanged; use copies for further work and troubleshooting.
-- **Working Packet Tracer file:** [spare-room.pkt](spare-room.pkt).
+- **Accepted chapter file:** [spare-room.pkt](spare-room.pkt) — Matt’s original filename; preserve unchanged and use local copies for further work or troubleshooting.
 - **Baseline version:** `chapter-1-v1`.
 - **Baseline SHA-256:** `059548ee5c6adecccd14b34f98054eb7c3615d6e1361158a6e1134d59e8c0b3f`.
 - **Accepted:** 2026-11-21, based on saved-state inspection and Matt’s reported Packet Tracer tests.
@@ -121,3 +120,9 @@ Matt confirmed the latest changes were saved and explicitly approved retaining t
 | Topology and baseline preservation | Actual screenshot; unchanged source copied to versioned network.pkt with SHA-256 | Accepted |
 
 Matt designed, configured, diagnosed and repaired the network. The tutor supplied the assignment, investigation pointers, requested explanations and guided wireless setup, reviewed saved state and maintained records. This was an assisted learning build, not a claim of an unaided assessment. No sabotage exercise has been run. The next action is optional troubleshooting on a separate copy, or agreeing Chapter 2 when Matt is ready.
+
+## File organisation — 2026-11-21
+
+The accepted chapter file retains Matt’s original name, `spare-room.pkt`. The redundant `network.pkt` copy was removed from the current tree. Baseline bytes, SHA-256 and the `chapter-1-v1` tag are unchanged; historical entries naming `network.pkt` describe the earlier layout. The newer unaccepted working save was preserved privately before consolidating the filenames.
+
+Completed troubleshooting reports link their own clearly named before/after lab files. These are distinct exercise evidence, not additional chapter baselines.

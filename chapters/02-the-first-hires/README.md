@@ -2,7 +2,7 @@
 
 > **Status:** provisional planning placeholder; not an issued assignment.
 
-[Project overview](../../README.md) · [Previous chapter](../01-the-spare-room/README.md) · [Troubleshooting record](troubleshooting.md)
+[Project overview](../../README.md) · [Previous chapter](../01-the-spare-room/README.md)
 
 ## The business change
 
@@ -16,9 +16,9 @@ Before issuing the assignment, agree the addressing, access requirements, intern
 
 ## Topology and lab
 
-**Topology screenshot:** pending — [placeholder](topology.png.placeholder). Embed the actual screenshot here after the build.
+**Topology screenshot:** pending; add it after the build.
 
-**Accepted Packet Tracer file:** pending — [placeholder](network.pkt.placeholder). It will contain the expanded network for this chapter, preserving the separate Chapter 1 snapshot.
+**Accepted Packet Tracer file:** pending. Retain the learner’s chosen chapter filename when accepting the expanded network; preserve Chapter 1’s separate snapshot.
 
 **Baseline identity:** not assigned.
 
@@ -35,4 +35,4 @@ Pending: addressing table, what changes from Chapter 1, what is retained, and Ma
 
 ## Troubleshooting
 
-[No exercises have been run yet.](troubleshooting.md) Exercise scope will depend on the accepted Chapter 2 network.
+No exercises have been run yet. Create the ticket index when an exercise is actually planned; its scope will depend on the accepted Chapter 2 network.

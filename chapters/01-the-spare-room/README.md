@@ -22,7 +22,7 @@ Your assignment is to design and build Copper Kobold’s first network.
 
 ![Copper Kobold Games Chapter 1 topology: home-office LAN, wireless phone and simulated ISP](topology.png)
 
-[Download the accepted Packet Tracer lab](network.pkt) · Baseline **`chapter-1-v1`** · [Baseline identity and working file](build-record.md#baseline-identity)
+[Download the accepted Packet Tracer lab](spare-room.pkt) · Baseline **`chapter-1-v1`** · [Baseline identity](build-record.md#baseline-identity)
 
 ## Outcome and Review
 

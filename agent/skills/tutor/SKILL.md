@@ -9,11 +9,13 @@ One agent assigns, reviews, tutors and records. The learner designs, configures 
 
 ## Open or resume
 
-Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements, build-record.md for design/review evidence, and troubleshooting.md for the ticket index. Follow the relevant link to troubleshooting/<ticket-id>.md to read the actual exercise record. Older provisional chapters may still keep material in their README or troubleshooting.md; use it there until migrated. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
+Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements and build-record.md for design/review evidence. If a troubleshooting.md index exists, follow the relevant link to troubleshooting/<ticket-id>.md for the actual exercise record. Its absence before the first planned exercise is normal. Older provisional chapters may still keep material in their README or troubleshooting.md; use it there until migrated. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
 
 Read the latest entry in the root `bookmark.md` when present to recover the learner's stopping point. Keep it private and gitignored.
 
 Read `local/learning-scope.md` privately and refresh it from its named progress sources before expanding scope. It records covered build concepts, troubleshooting-eligible topics and evidence/date. If unavailable, ask for the missing scope; do not infer mastery from a date or existing configuration. Previously recorded scope can support existing work, never silently expand it. Keep source identities, mappings and personal paths out of public content.
+
+Check individual requirements against covered material; the presence of a device does not imply the learner has studied all its configuration. If the learner explicitly chooses a preview, record its limited scope and provide guided setup when requested. A preview does not mark coursework complete or make that feature eligible for hidden faults. Record agreed scope changes and practical lab exceptions in the assignment/build record so later reviews do not reopen settled choices.
 
 ## Boundaries
 
@@ -21,30 +23,31 @@ Read `local/learning-scope.md` privately and refresh it from its named progress 
 - Keep accepted chapter baselines immutable. Work in `local/` copies; record baseline version and SHA-256. Confirm saved file paths before review; never infer that an unsaved UI change reached disk.
 - Saved-state checks and lint are leads, not proof of running behaviour. Request specific Packet Tracer tests when needed; label unverified checks. Do not claim a screenshot or command ran without evidence.
 - Reveal the hidden answer only on an explicit request; log the request and disclosure. Pause, failure, abandonment and debrief are not permission. A revealed/spoiled run cannot become an independent solve.
-- Keep sealed answers, scope sources and scratch evidence under gitignored `local/`; check they are not already tracked. Commit/tag only the intended baseline or ticket metadata as part of an authorised exercise. Do not push/publish or include unrelated staged changes.
+- Keep sealed answers, scope sources and scratch evidence under gitignored `local/`; check they are not already tracked. Commit/tag only the intended baseline or ticket metadata as part of an authorised exercise. Push/publish only within the learner's authorisation, and exclude unrelated staged or working changes.
 
 ## Chapter loop
 
 1. **Agree and assign.** Choose a believable business need within the private learning ceiling. Use the [chapter summary](../../templates/chapter.md), [assignment](../../templates/assignment.md) and [build record](../../templates/build-record.md) templates with the guidance below. Later chapter placeholders are proposals, not instructions to build ahead.
 2. **Review.** Inspect the submitted saved file and test evidence against each requirement. Give concise investigation pointers for failures, never the fault or corrective commands. The learner fixes and resubmits. Maintain the review and actual design reasoning yourself.
-3. **Accept.** When requirements pass, preserve the submitted file as that chapter's `network.pkt`; record hash, version/tag and evidence in build-record.md and summarise the outcome in the chapter README. Replace asset placeholders only with real files. Request a real topology capture if unavailable. Do not overwrite an existing accepted snapshot without an explicitly agreed revision.
+3. **Accept.** When requirements pass, preserve one chapter baseline under the learner's descriptive filename (for example `spare-room.pkt`); do not add a generic duplicate. Record its exact path, hash, version/tag and evidence in build-record.md and summarise the outcome in the chapter README. Keep subsequent working copies under ignored local/. Request a real topology capture if unavailable. Use plain pending text for absent assets rather than creating placeholder files. Do not overwrite an existing accepted snapshot without an explicitly agreed revision.
 4. **Offer practice.** Offer an optional run; on acceptance/request, load the sabotage skill in this same context. Usually 1–3 runs per chapter, never a quota. Require an accepted baseline and aligned scope.
 5. **Expand.** When the learner is ready, agree the next business change and reuse the last accepted network. Keep earlier snapshots intact.
 
 ## Write the assignment
 
-Keep each chapter in four linked documents:
+Use three core chapter documents and add a ticket index when needed:
 
 - **README.md:** title/status, Field Briefing, topology and accepted-lab link, and a concise outcome/review summary. Aim for roughly 300–500 words for a completed chapter. Keep evidence limitations and meaningful assistance visible; do not append tasks or review timelines here.
 - **assignment.md:** objectives, equipment and starting conditions, access and required parameters, learner design decisions, numbered tasks, validation, completion checklist and submission instructions. Link to the README's Field Briefing rather than copying the story.
 - **build-record.md:** baseline identity, actual design/addressing and reasoning, dated reviews, corrections, assistance and detailed acceptance evidence. Preserve the full history; distinguish historical pending findings from the current outcome.
-- **troubleshooting.md:** a short exercise index using the [index template](../../templates/troubleshooting-index.md), linking to one report per ticket under troubleshooting/. Ordinary build problems and their resolution stay in the build record.
+- **troubleshooting.md (when needed):** a short exercise index using the [index template](../../templates/troubleshooting-index.md), linking to one report per ticket under troubleshooting/. Create it when the first exercise is planned or the learner requests a scaffold. Ordinary build problems and their resolution stay in the build record.
 
-Create the three chapter documents together when issuing a chapter, with reciprocal relative links. Each detail has one home: update the appropriate record and refresh the README summary when status changes. If reorganising an existing chapter, move its detail without discarding evidence, repair links to moved sections, and preserve accepted network files and tags.
+Create the three core chapter documents together when issuing a chapter, with reciprocal relative links. Link optional indexes/assets only when they exist; use plain pending text otherwise. Each detail has one home: update the appropriate record and refresh the README summary when status changes. If reorganising an existing chapter, move its detail without discarding evidence, repair links to moved sections, and preserve accepted network files and tags. Preserve any distinct working save locally before consolidating duplicate filenames; never silently discard it.
 
 When `local/storyline.md` exists, read the premise and relevant chapter snippet for consistent names and brief narrative context. Keep that source file private; use its story in the assignment without treating narrative details as additional technical requirements or permission to expand learning scope.
 
 - Give each task a meaningful title, a specific objective, ordered actions and an observable checkpoint. Tailor the task count and sequence to the chapter; the template's task titles are examples, not a fixed curriculum. Fill in placeholders and omit inapplicable items before issuing the brief.
+- Split a large chapter into manageable sections with working checkpoints. Do not let one section grow into a multi-day build/test exercise merely to satisfy the company story; keep the story brief and the technical work within agreed scope.
 - Specify required devices, links, services, values and constraints precisely. Clearly distinguish supplied requirements from decisions left to the learner. Where design is part of the assignment, state its constraints without silently supplying the design. The learner performs all network configuration.
 - Include verification commands or Packet Tracer instructions where useful, with the expected result and test location. Environment-specific instructions may remove tool friction; do not turn the default assignment into a complete configuration solution. This guidance applies to build assignments; review and troubleshooting hint boundaries remain unchanged.
 - Before issuing, check that objectives, task instructions, validation and completion criteria agree. Every required outcome needs a relevant check; do not demand evidence for clients or services the assignment never required. Include checks for retained services when extending an accepted network, and distinguish saved-state inspection from actual Packet Tracer behaviour.
@@ -62,9 +65,11 @@ Explain concepts, commands and diagnostic reasoning when asked. Anything directi
 
 Use the least revealing useful rung; do not escalate unasked. Keep ordinary teaching from becoming a disguised answer.
 
-When the learner reports a fix, inspect their saved exercise copy and repeat the relevant baseline/symptom checks with actual PT evidence. Accept a different valid repair if requirements pass; distinguish a workaround. If it still fails, provide the result without unsolicited diagnostic hints.
+When the learner reports a fix, inspect their saved exercise copy and check the relevant baseline/symptom tests using actual PT evidence. Reuse supplied results when they clearly identify the required checks; ask only for missing or materially uncertain results. Distinguish learner-reported tests, pasted output and tutor file inspection without claiming independent simulation execution. Accept a different valid repair if requirements pass; distinguish a workaround. If it still fails, provide the result without unsolicited diagnostic hints. On verified closure, immediately preserve the exact repaired file as local/runs/<id>/resolved.pkt and record its hash before later saves can change it; never overwrite this snapshot silently.
 
 Write the short issue/repair/verification report from their demonstrated diagnosis and changes. Preserve wrong turns, lookups and assistance. For an unresolved run, leave unrevealed cause/fix out. Offer another run only after closing; do not require one before the next chapter.
+
+For completed reports approved for publication, copy the preserved initial.pkt and resolved.pkt snapshots into troubleshooting/<ticket-id>/ using descriptive names such as `<chapter-name>-T001-before.pkt` and `<chapter-name>-T001-after.pkt`. Verify the copied hashes and link both files from the report; the chapter baseline remains separate and unchanged. Copy evidence, never manufacture a repair or alter an existing snapshot. For older runs missing these snapshots, an initial file may be recovered from preserved XML only with its recorded hash verified and provenance disclosed. If an archived after-file differs from the originally verified file, inspect it and keep both identities explicit rather than replacing historical evidence. Active-run copies and sealed answers remain private.
 
 ## Keep the records
 

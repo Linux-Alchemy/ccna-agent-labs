@@ -2,7 +2,7 @@
 
 One Codex agent guides the work. It uses a main tutoring skill and loads a small sabotage procedure only when an exercise is requested. There is no separate saboteur agent.
 
-**Status:** both skills, Packet Tracer scripts and templates are implemented. The first real chapter-and-ticket cycle is still pending; skill validation is not a claim that live troubleshooting has been completed.
+**Status:** Chapter 1 and its first real troubleshooting run, T001, are complete. Records distinguish agent file inspection from learner-run Packet Tracer tests; the private formatting tester is not part of the published exercise series.
 
 ## Responsibilities
 
@@ -28,7 +28,7 @@ During review, the agent inspects the lab and gives investigation pointers; it d
 
 The scripts are the existing local Packet Tracer utilities, copied unchanged. Their source comments and format attribution are preserved. They use the Python standard library; there are no Python packages to install.
 
-Issued chapters use a short README linked to assignment.md, build-record.md and the troubleshooting.md index. The tutor maintains these records: build corrections belong in the build record, while each deliberate troubleshooting exercise has its own report under troubleshooting/. Ticket and resolution stay together; long logs may be expandable while the outcome, assistance and verification summary remain visible. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
+Issued chapters use a short README linked to assignment.md and build-record.md. Add the troubleshooting.md index when the first exercise is planned or a scaffold is requested. The tutor maintains these records: build corrections belong in the build record, while each deliberate troubleshooting exercise has its own report under troubleshooting/. Ticket and resolution stay together; long logs may be expandable while the outcome, assistance and verification summary remain visible. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
 
 ## Use the available scripts
 
@@ -81,3 +81,9 @@ Example requests:
 - "Pause this ticket" / "Resume my ticket" / "The fix is saved; check it."
 
 The learner builds and repairs; the tutor maintains the records. No accepted baseline means no sabotage session yet. Separating skill files does not hide tool calls: an accidental answer disclosure is logged, not counted as an independent solve.
+
+## Lab file conventions
+
+Keep one accepted chapter file under the learner’s descriptive filename, such as `spare-room.pkt`; do not add a generic duplicate. Its hash/version in the build record identifies the baseline. Make further working copies under ignored `local/`.
+
+Completed ticket reports may link files such as `troubleshooting/T001/spare-room-T001-before.pkt` and `spare-room-T001-after.pkt`. Freeze the faulted `initial.pkt` before investigation and the verified `resolved.pkt` at closure under the private run folder; public evidence copies retain those snapshots' hashes. Keep active-run copies, sealed answers and scratch exports private; publishable snapshots belong only to a closed, approved report. Do not add empty image/lab placeholders or ticket logs to future chapters—plain “pending” text is enough until there is real content.

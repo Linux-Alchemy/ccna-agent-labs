@@ -6,7 +6,9 @@
 >
 > **Starting point:** <new network or previous accepted chapter>
 
-[Project overview](../../README.md) · [Assignment](assignment.md) · [Build record](build-record.md) · [Troubleshooting](troubleshooting.md)
+[Project overview](../../README.md) · [Assignment](assignment.md) · [Build record](build-record.md)
+
+<!-- Add a Troubleshooting link when troubleshooting.md actually exists. -->
 
 ## Field Briefing
 
@@ -16,7 +18,7 @@
 
 <Embed the actual topology.png when available; otherwise state that it is pending.>
 
-<Once accepted, link network.pkt and give the baseline version. Before acceptance, state that the baseline is pending; link a confirmed working file only if useful.>
+<Once accepted, link the learner-named chapter file (for example spare-room.pkt) and give the baseline version. Keep one canonical baseline, not a generic duplicate. Before acceptance, state that the baseline is pending; do not create a placeholder asset file.>
 
 [Baseline identity and evidence](build-record.md#baseline-identity)
 
@@ -26,6 +28,8 @@
 
 <Summarise review status, what was checked and by whom, any unverified behaviour or limitations, and significant learning/assistance. Keep this visible rather than hiding it in collapsed sections.>
 
-[Design and detailed review](build-record.md) · [Troubleshooting records](troubleshooting.md)
+[Design and detailed review](build-record.md)
+
+<State whether exercises are planned, active or completed; link the troubleshooting index only if it exists. Do not create an empty log just to satisfy this template.>
 
 <One sentence on the next action. Aim for roughly 300–500 words total in the completed README, excluding the image; keep detailed tasks and history in their linked files.>

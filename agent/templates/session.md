@@ -10,6 +10,10 @@
 
 **Baseline:** <accepted chapter version; details below>
 
+## Lab Files
+
+<For a closed report approved for publication, link copies of the preserved initial.pkt and verified resolved.pkt snapshots under this ticket's matching asset folder, using descriptive names such as T001/spare-room-T001-before.pkt and T001/spare-room-T001-after.pkt. Verify the copies' hashes and record provenance below. While a run is active or snapshots are unavailable, state that evidence files are pending; never invent files or expose sealed answers.>
+
 ## Ticket
 
 <Reported symptom and business impact only. For a planned placeholder, leave this pending; do not invent a complaint or start an exercise.>
@@ -66,6 +70,7 @@
 - **Baseline identity:** <chapter, version/tag, SHA-256>.
 - **Initial exercise SHA-256:** <after setup; otherwise pending>.
 - **Repaired exercise SHA-256:** <after verification; otherwise pending>.
+- **Archived snapshot identities:** <before/after filenames, hashes and provenance; distinguish an archive from a different at-verification file, or pending>.
 - **Answer commitment:** <SHA-256 and pre-ticket commit; never the sealed answer or undo details>.
 - **Opened / closed:** <actual timestamps, or not opened/not closed>.
 - **Active time:** <recorded or unknown; do not equate elapsed wall-clock time with active work>.

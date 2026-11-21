@@ -25,7 +25,7 @@ To keep the project honest, I'm keeping records, rather, the agent is keeping re
 
 - [Chapter 1: The Spare Room](chapters/01-the-spare-room/)
 - [Chapter 2: The First Hires](chapters/02-the-first-hires/)
-- [Chapter 3: Separating the Network](chapters/03-separating-the-network/)
+- [Chapter 3: The First Office](chapters/03-the-first-office/)
 - [Agent overview](agent/README.md) — responsibilities and guidance for reuse.
 - [Use the skills with your own agent](agent/README.md#use-with-your-own-agent) — Codex, Grok, Claude or another host.
 - [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
@@ -34,7 +34,7 @@ Issued chapters have a short README with the story, topology and outcome, linked
 
 ## Current status
 
-**Chapter 1 — The Spare Room is accepted (2026-11-21).** Its [summary and topology](chapters/01-the-spare-room/README.md) link to the [assignment](chapters/01-the-spare-room/assignment.md) and [detailed build record](chapters/01-the-spare-room/build-record.md). The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
+**Chapter 1 — The Spare Room is accepted (2026-11-21).** Its [summary and topology](chapters/01-the-spare-room/README.md) link to the [assignment](chapters/01-the-spare-room/assignment.md) and [detailed build record](chapters/01-the-spare-room/build-record.md). The preserved [spare-room.pkt](chapters/01-the-spare-room/spare-room.pkt) baseline is versioned as `chapter-1-v1`.
 
 Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded. The first publishable troubleshooting exercise, T001, is resolved without diagnostic hints; the accepted baseline is unchanged.
 
