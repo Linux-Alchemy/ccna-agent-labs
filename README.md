@@ -34,10 +34,10 @@ Each chapter has its own brief, design and acceptance record, with space for a t
 
 ## Current status
 
-**Chapter 1 — The Spare Room is being built.** Matt reports the topology is drawn and labelled, with some baseline configuration on the switch and both routers; Section 1A, Task 2 is nearly complete. The working lab is [spare-room.pkt](chapters/01-the-spare-room/spare-room.pkt). The chapter covers the home-office network, DHCP and local DNS in Section 1A, followed by simulated internet access in Section 1B.
+**Chapter 1 — The Spare Room is accepted (2026-11-21).** The [chapter record](chapters/01-the-spare-room/README.md) contains the real topology image, design reasoning, review history and acceptance evidence. The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
 
-**Next action:** finish [Task 2 — Assemble and Configure the Office](chapters/01-the-spare-room/README.md#task-2--assemble-and-configure-the-office) and its checkpoint, then continue with Task 3 — Provide DHCP and DNS. Section 1A can be submitted for review before continuing to Section 1B.
+Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded; no sabotage session has been run.
 
-No chapter network has been reviewed or accepted, and no troubleshooting session has started. The accepted baseline and topology image remain pending; the topology image still has a placeholder. Both agent skills are implemented and discoverable in Codex; later chapter folders remain provisional.
+**Next action:** optional troubleshooting on a copy of the accepted baseline, or agree the Chapter 2 expansion when Matt is ready. Later chapter folders remain provisional.
 
 This is a project in progress, not a ready-to-run lab package.
