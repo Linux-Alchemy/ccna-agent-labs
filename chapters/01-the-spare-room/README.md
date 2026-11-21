@@ -34,4 +34,4 @@ Review included saved-configuration checks and Matt’s reported successful conn
 
 See the [design and addressing table](build-record.md#design-response) and [full review and acceptance evidence](build-record.md#review-and-acceptance) for details.
 
-The [troubleshooting index](troubleshooting.md) links to the planned first publishable ticket. Its report structure is ready; the exercise has not started. Future runs use copies of the accepted baseline.
+[T001 — Workstation cannot reach the development server](troubleshooting/T001.md) is resolved without diagnostic hints. Matt checked the client, identified the server addressing issue and verified his repair. Further exercises are listed in the [troubleshooting index](troubleshooting.md); the accepted baseline remains unchanged.

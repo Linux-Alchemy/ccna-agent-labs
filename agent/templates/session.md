@@ -20,6 +20,8 @@
 
 ## Investigation
 
+<!-- Clean up supplied notes and output into checks → observations → reasoning → action. Remove paste artefacts, repeated prompts and irrelevant lines; preserve failures, wrong turns, uncertainty and the learner's actual process. Retain exact commands/values or short excerpts when they provide useful evidence. -->
+
 | Step | Check / action | Finding and reasoning |
 |---|---|---|
 | <step> | <what the learner actually checked or changed> | <observation, conclusion or next action> |
@@ -29,7 +31,7 @@
 <details>
 <summary>Full investigation log</summary>
 
-<Detailed checks, observations, hypotheses, lookups and wrong turns in order. Distinguish learner reports from agent inspection and supplied evidence. Include a full log here only when it adds detail beyond the summary.>
+<Cleaned, detailed checks, observations, hypotheses, lookups and wrong turns in order. Distinguish learner reports from agent inspection and pasted output. Use selected excerpts where needed rather than automatically copying whole transcripts. Include a log here only when it adds useful detail beyond the summary.>
 
 </details>
 
@@ -48,6 +50,8 @@
 | Check | Result | Evidence / source |
 |---|---|---|
 | <required check> | <pending / pass / fail / unverified> | <tutor saved-state inspection / learner-run test report / supplied output> |
+
+<!-- Preserve meaningful counts, timeouts and interrupted tests. Identify before/after-repair evidence; do not present a pre-repair or partially successful test as a clean final pass. -->
 
 **Outcome:** <concise disposition, including any workaround, remaining uncertainty and attribution. Do not claim agent-run tests without evidence.>
 

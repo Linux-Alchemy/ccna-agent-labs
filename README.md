@@ -36,8 +36,8 @@ Issued chapters have a short README with the story, topology and outcome, linked
 
 **Chapter 1 — The Spare Room is accepted (2026-11-21).** Its [summary and topology](chapters/01-the-spare-room/README.md) link to the [assignment](chapters/01-the-spare-room/assignment.md) and [detailed build record](chapters/01-the-spare-room/build-record.md). The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
 
-Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded. The first publishable troubleshooting report is scaffolded; that exercise has not started.
+Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded. The first publishable troubleshooting exercise, T001, is resolved without diagnostic hints; the accepted baseline is unchanged.
 
-**Next action:** when Matt requests it, prepare the [first publishable troubleshooting ticket](chapters/01-the-spare-room/troubleshooting/T001.md) on a copy of the accepted baseline. Later chapter folders remain provisional.
+**Next action:** choose another beginner/Tier 1 exercise or agree the next chapter when Matt is ready. The [completed T001 report](chapters/01-the-spare-room/troubleshooting/T001.md) has been reviewed and approved. Later chapter folders remain provisional.
 
 This is a project in progress, not a ready-to-run lab package.
