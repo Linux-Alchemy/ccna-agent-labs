@@ -27,7 +27,7 @@ The tutor maintains this record. Dated entries preserve the state at the time; t
 - **Findings and corrections:** <what needs work, learner changes and recheck result>.
 - **Assistance:** <investigation pointers, explanations or guided setup; preserve actual wording where recorded>.
 
-<Append meaningful review events, retaining wrong turns, help and previous findings. Explain or supersede historical pending statements rather than rewriting history as an unaided success. Build problems belong here; deliberate sabotage sessions belong in troubleshooting.md.>
+<Append meaningful review events, retaining wrong turns, help and previous findings. Explain or supersede historical pending statements rather than rewriting history as an unaided success. Build problems belong here; deliberate sabotage reports belong under troubleshooting/ and are linked from the troubleshooting.md index.>
 
 ## Acceptance
 

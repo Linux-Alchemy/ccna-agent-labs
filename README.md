@@ -30,14 +30,14 @@ To keep the project honest, I'm keeping records, rather, the agent is keeping re
 - [Use the skills with your own agent](agent/README.md#use-with-your-own-agent) — Codex, Grok, Claude or another host.
 - [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
 
-Issued chapters have a short README with the story, topology and outcome, linked to a detailed assignment, build record and troubleshooting log. Chapter 1 follows this structure; later chapters remain provisional.
+Issued chapters have a short README with the story, topology and outcome, linked to a detailed assignment, build record and troubleshooting index. Each ticket has its own report under the chapter's troubleshooting/ folder. Chapter 1 follows this structure; later chapters remain provisional.
 
 ## Current status
 
 **Chapter 1 — The Spare Room is accepted (2026-11-21).** Its [summary and topology](chapters/01-the-spare-room/README.md) link to the [assignment](chapters/01-the-spare-room/assignment.md) and [detailed build record](chapters/01-the-spare-room/build-record.md). The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
 
-Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded; no sabotage session has been run.
+Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded. The first publishable troubleshooting report is scaffolded; that exercise has not started.
 
-**Next action:** optional troubleshooting on a copy of the accepted baseline, or agree the Chapter 2 expansion when Matt is ready. Later chapter folders remain provisional.
+**Next action:** when Matt requests it, prepare the [first publishable troubleshooting ticket](chapters/01-the-spare-room/troubleshooting/T001.md) on a copy of the accepted baseline. Later chapter folders remain provisional.
 
 This is a project in progress, not a ready-to-run lab package.

@@ -9,7 +9,7 @@ One agent assigns, reviews, tutors and records. The learner designs, configures 
 
 ## Open or resume
 
-Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements, build-record.md for design/review evidence, and troubleshooting.md for exercises. Older provisional chapters may still keep this material in their README; use it there until the chapter is issued in the new structure. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
+Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements, build-record.md for design/review evidence, and troubleshooting.md for the ticket index. Follow the relevant link to troubleshooting/<ticket-id>.md to read the actual exercise record. Older provisional chapters may still keep material in their README or troubleshooting.md; use it there until migrated. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
 
 Read the latest entry in the root `bookmark.md` when present to recover the learner's stopping point. Keep it private and gitignored.
 
@@ -38,7 +38,7 @@ Keep each chapter in four linked documents:
 - **README.md:** title/status, Field Briefing, topology and accepted-lab link, and a concise outcome/review summary. Aim for roughly 300–500 words for a completed chapter. Keep evidence limitations and meaningful assistance visible; do not append tasks or review timelines here.
 - **assignment.md:** objectives, equipment and starting conditions, access and required parameters, learner design decisions, numbered tasks, validation, completion checklist and submission instructions. Link to the README's Field Briefing rather than copying the story.
 - **build-record.md:** baseline identity, actual design/addressing and reasoning, dated reviews, corrections, assistance and detailed acceptance evidence. Preserve the full history; distinguish historical pending findings from the current outcome.
-- **troubleshooting.md:** optional sabotage exercise sessions using the existing session template. Ordinary build problems and their resolution stay in the build record.
+- **troubleshooting.md:** a short exercise index using the [index template](../../templates/troubleshooting-index.md), linking to one report per ticket under troubleshooting/. Ordinary build problems and their resolution stay in the build record.
 
 Create the three chapter documents together when issuing a chapter, with reciprocal relative links. Each detail has one home: update the appropriate record and refresh the README summary when status changes. If reorganising an existing chapter, move its detail without discarding evidence, repair links to moved sections, and preserve accepted network files and tags.
 
@@ -51,6 +51,8 @@ When `local/storyline.md` exists, read the premise and relevant chapter snippet 
 - Use reference assignments as examples of structure and detail. Write original project content; do not copy their course story, branding, credentials or network choices into the chapter. Keep the private learning ceiling in force.
 
 ## Tutor an exercise
+
+Keep current exercises at beginner/Tier 1 level until the learner explicitly asks to increase difficulty. Prefer one common fault, a small affected scope and basic checks that practise a repeatable troubleshooting process. Stay within completed coursework and the accepted baseline; avoid compounded faults, obscure behaviour and problems that would normally require escalation to an experienced administrator. Successful easy runs are not automatic permission to raise difficulty.
 
 Explain concepts, commands and diagnostic reasoning when asked. Anything directing attention toward the hidden fault counts as a hint. Give hints only when requested and log them verbatim, with level and time:
 
@@ -68,7 +70,11 @@ Write the short issue/repair/verification report from their demonstrated diagnos
 
 After each work session, append a dated entry of a few lines to the root `bookmark.md`: where the learner stopped, progress, saved lab path, next action and any outstanding review. Distinguish learner-reported progress from verified results, preserve previous entries, and keep hidden fault details out.
 
-Use the [session template](../../templates/session.md), one section per run in the chapter's troubleshooting.md. Record actual timestamps and active time only when known. Update records after meaningful events so a new chat can resume without guessing. Extract CLI history relative to the baseline/start time; never attribute inherited commands to this session.
+Use the [session template](../../templates/session.md) for one complete report at troubleshooting/<ticket-id>.md (for example T001.md), keeping ticket and resolution together. Keep the chapter's troubleshooting.md index in sync with each report's symptom title, state and outcome. Use stable sequential IDs within each chapter and a distinct neutral private run ID; keep private calibration runs separate from public ticket numbering. A requested scaffold is planned/not started: do not invent symptoms, fault setup, tests, timestamps or a commitment, and do not treat a placeholder as permission to start a run.
+
+Keep short reports fully readable. For long reports, retain a concise investigation summary and move the full chronology, lengthy output or hint transcripts into optional `<details><summary>…</summary>` blocks, with blank lines around the Markdown content. Preserve useful evidence, wrong turns and verbatim hints. Keep the ticket, outcome, meaningful assistance/answer disclosure, resolution and verification summary visible. Collapse run hashes/timestamps when useful; collapsed content is public, never a place for sealed answers or setup secrets. Create a supporting asset folder only when a ticket actually has attachments to store.
+
+Record actual timestamps and active time only when known. Update records after meaningful events so a new chat can resume without guessing. Extract CLI history relative to the baseline/start time; never attribute inherited commands to this session.
 
 - **Pause:** keep the same run, copy, sealed answer and notes. Resume only after checking baseline/copy identities and the recorded state.
 - **Stop/abandon:** close as unresolved; retain evidence and answer privacy. No automatic reveal, repair or new fault.

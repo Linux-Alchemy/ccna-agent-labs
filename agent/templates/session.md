@@ -1,29 +1,71 @@
-## Session <id> — <symptom title>
+# <ticket-id> — <symptom title>
 
-- **State:** <active / paused / closed>.
-- **Baseline:** <chapter, file hash and commit/tag>.
-- **Answer commitment:** <hash and pre-ticket commit; never the answer file>.
-- **Opened / closed:** <timestamps>; **active time:** <recorded or unknown>.
-- **Outcome:** <pending / solved / solved with hints / answer-assisted / unresolved / spoiled by disclosure>.
+[Troubleshooting index](../troubleshooting.md) · [Chapter summary](../README.md) · [Build record](../build-record.md)
 
-### Ticket
+**State:** <planned / setup pending / active / paused / closed>
 
-<Reported symptom and impact only.>
+**Outcome:** <not started / pending / solved / solved with hints / answer-assisted / unresolved / spoiled by disclosure>
 
-### Investigation
+**Requester:** <name/role when established> · **Resolved by:** <learner or pending>
 
-<Timeline of checks, observations, hypotheses, lookups and wrong turns. Separate agent inspection from the learner's Packet Tracer tests.>
+**Baseline:** <accepted chapter version; details below>
 
-### Assistance
+## Ticket
 
-<Verbatim hints with level and time, or none. Record any explicit answer request and disclosure.>
+<Reported symptom and business impact only. For a planned placeholder, leave this pending; do not invent a complaint or start an exercise.>
 
-### Resolution
+**Confirmed observations:** <actual symptom checks, or pending>.
 
-- **Issue:** <demonstrated diagnosis; withhold unrevealed cause for an unresolved session>.
-- **Repair:** <what the learner actually changed, or not repaired>.
-- **Verification:** <actual checks and results; note a workaround or unverified behaviour>.
+**Completion criteria:** <required restored behaviour and relevant unaffected checks, or pending>.
 
-### Debrief
+## Investigation
 
-<Short lesson grounded in the session. Do not reveal an unrequested answer or claim an assisted solve was independent.>
+| Step | Check / action | Finding and reasoning |
+|---|---|---|
+| <step> | <what the learner actually checked or changed> | <observation, conclusion or next action> |
+
+<!-- For a short run, the table is enough: remove the optional expanded log below. For a long run, keep the table as the concise investigation summary and preserve the full chronology below. Do not discard wrong turns or assistance when compacting. -->
+
+<details>
+<summary>Full investigation log</summary>
+
+<Detailed checks, observations, hypotheses, lookups and wrong turns in order. Distinguish learner reports from agent inspection and supplied evidence. Include a full log here only when it adds detail beyond the summary.>
+
+</details>
+
+## Assistance
+
+<Visible summary of hints/guidance, or explicitly none/not started. Preserve hints verbatim with level and time when known. Record explicit answer requests and disclosure. A lengthy hint transcript may be folded, but keep the assistance level and any answer reveal visible here.>
+
+## Resolution
+
+**Cause:** <learner's demonstrated diagnosis after resolution; pending while open; withhold an unrevealed cause if unresolved>.
+
+**Repair:** <what the learner actually changed; pending or not repaired where appropriate>.
+
+## Verification
+
+| Check | Result | Evidence / source |
+|---|---|---|
+| <required check> | <pending / pass / fail / unverified> | <tutor saved-state inspection / learner-run test report / supplied output> |
+
+**Outcome:** <concise disposition, including any workaround, remaining uncertainty and attribution. Do not claim agent-run tests without evidence.>
+
+## Takeaway
+
+<Short lesson grounded in the demonstrated investigation and repair; pending until there is evidence. Do not reveal an unrequested answer in an unresolved run.>
+
+<details>
+<summary>Run metadata</summary>
+
+- **Private run ID:** <neutral identifier linking this ticket to its ignored run folder, or not assigned>.
+- **Baseline identity:** <chapter, version/tag, SHA-256>.
+- **Initial exercise SHA-256:** <after setup; otherwise pending>.
+- **Repaired exercise SHA-256:** <after verification; otherwise pending>.
+- **Answer commitment:** <SHA-256 and pre-ticket commit; never the sealed answer or undo details>.
+- **Opened / closed:** <actual timestamps, or not opened/not closed>.
+- **Active time:** <recorded or unknown; do not equate elapsed wall-clock time with active work>.
+
+</details>
+
+<!-- Collapsed sections reduce scrolling; they are public content, not a privacy boundary. Sealed answers, fault setup, private scope sources and scratch data stay under gitignored local/. -->

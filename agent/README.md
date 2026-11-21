@@ -23,11 +23,12 @@ During review, the agent inspects the lab and gives investigation pointers; it d
 - [Chapter summary template](templates/chapter.md): chapter README with the Field Briefing, topology and concise outcome/review summary.
 - [Assignment template](templates/assignment.md): equipment, requirements, tasks, checkpoints and completion checklist for assignment.md.
 - [Build record template](templates/build-record.md): baseline identity, design reasoning, review history, assistance and acceptance evidence for build-record.md.
-- [Session template](templates/session.md): one section per exercise in a chapter's `troubleshooting.md`.
+- [Troubleshooting index template](templates/troubleshooting-index.md): the short chapter-level ticket list in `troubleshooting.md`.
+- [Session template](templates/session.md): one complete ticket and resolution report in `troubleshooting/<ticket-id>.md`, with optional expandable detail for longer runs.
 
 The scripts are the existing local Packet Tracer utilities, copied unchanged. Their source comments and format attribution are preserved. They use the Python standard library; there are no Python packages to install.
 
-Issued chapters use a short README linked to assignment.md, build-record.md and troubleshooting.md. The tutor maintains these records: build corrections belong in the build record, while deliberate troubleshooting exercises retain their separate session log. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
+Issued chapters use a short README linked to assignment.md, build-record.md and the troubleshooting.md index. The tutor maintains these records: build corrections belong in the build record, while each deliberate troubleshooting exercise has its own report under troubleshooting/. Ticket and resolution stay together; long logs may be expandable while the outcome, assistance and verification summary remain visible. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
 
 ## Use the available scripts
 

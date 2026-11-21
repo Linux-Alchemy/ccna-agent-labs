@@ -4,4 +4,4 @@
 
 **No sessions yet.** The chapter has no accepted baseline, so no exercise has been started.
 
-The tutor adds one section per session using the [session template](../../agent/templates/session.md). The record includes the symptom, investigation, verbatim hints, issue, repair, verification and honest outcome. Hidden answers stay outside this file unless explicitly requested; an unresolved session must not expose an unrequested solution.
+When exercises begin, this page becomes the short ticket index. The tutor uses the [session template](../../agent/templates/session.md) for one report per exercise under troubleshooting/, keeping ticket, investigation, assistance, resolution and verification together. Long logs may be expandable; sealed answers remain private and an unresolved report must not expose an unrequested solution.

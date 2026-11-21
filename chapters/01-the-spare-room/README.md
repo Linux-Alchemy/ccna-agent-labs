@@ -34,4 +34,4 @@ Review included saved-configuration checks and Matt’s reported successful conn
 
 See the [design and addressing table](build-record.md#design-response) and [full review and acceptance evidence](build-record.md#review-and-acceptance) for details.
 
-No sabotage exercises have been run. Next is optional [troubleshooting](troubleshooting.md) on a copy of the baseline, or agreeing the Chapter 2 expansion.
+The [troubleshooting index](troubleshooting.md) links to the planned first publishable ticket. Its report structure is ready; the exercise has not started. Future runs use copies of the accepted baseline.
