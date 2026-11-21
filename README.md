@@ -2,7 +2,7 @@
 
 I build an evolving business network from requirements. One agent assigns and reviews the work, creates optional troubleshooting exercises, and maintains the records. I configure the network and fix the faults.
 
-I've created this project to accomplish two things. First is getting in more hands on work as I prepare for my CCNA exam. And second was to find a way to create a more real work like experience. There's real value in building labs for practice, of that there's no doubt. But I was looking for something that might be more similar to what one would see on the job. For example, you get handed a scope and you need to design the network, or maybe there's a network up and running and you're tasked with solving an issue. In this case, for the troubleshooting aspect of the project, I ask the agent to literally break something, not tell me what it is, and to only give me a ticket similar to what a network admin might see, my job then is to figure out what the problem is a fix it. 
+I've created this project to accomplish two things. First is getting in more hands on work as I prepare for my CCNA exam. And second was to find a way to create a more real work like experience. There's real value in building labs for practice, of that there's no doubt. But I was looking for something that might be more similar to what one would see on the job. For example, you get handed a scope and you need to design the network, or maybe there's a network up and running and you're tasked with solving an issue. In this case, for the troubleshooting aspect of the project, I ask the agent to literally break something, not tell me what it is, and to only give me a ticket similar to what a network admin might see, my job then is to figure out what the problem is and fix it.
 
 ## How it works
 
@@ -30,11 +30,11 @@ To keep the project honest, I'm keeping records, rather, the agent is keeping re
 - [Use the skills with your own agent](agent/README.md#use-with-your-own-agent) — Codex, Grok, Claude or another host.
 - [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
 
-Each chapter has its own brief, design and acceptance record, with space for a topology screenshot, an accepted Packet Tracer file and a troubleshooting log. Later chapters are provisional.
+Issued chapters have a short README with the story, topology and outcome, linked to a detailed assignment, build record and troubleshooting log. Chapter 1 follows this structure; later chapters remain provisional.
 
 ## Current status
 
-**Chapter 1 — The Spare Room is accepted (2026-11-21).** The [chapter record](chapters/01-the-spare-room/README.md) contains the real topology image, design reasoning, review history and acceptance evidence. The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
+**Chapter 1 — The Spare Room is accepted (2026-11-21).** Its [summary and topology](chapters/01-the-spare-room/README.md) link to the [assignment](chapters/01-the-spare-room/assignment.md) and [detailed build record](chapters/01-the-spare-room/build-record.md). The preserved [network.pkt](chapters/01-the-spare-room/network.pkt) baseline is versioned as `chapter-1-v1`.
 
 Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded; no sabotage session has been run.
 

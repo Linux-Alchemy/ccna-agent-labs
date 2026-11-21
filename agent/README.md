@@ -20,10 +20,14 @@ During review, the agent inspects the lab and gives investigation pointers; it d
 - [Sabotage skill](skills/sabotage/SKILL.md): scoped fault setup followed by a return to tutoring.
 - [pt.py](scripts/pt.py): inspect topology/configurations, extract command history, lint and export/re-encode XML.
 - [pktcrypto.py](scripts/pktcrypto.py): encoding/decoding helper used by `pt.py`.
-- [Chapter template](templates/chapter.md): assignment, topology, design response and acceptance evidence.
+- [Chapter summary template](templates/chapter.md): chapter README with the Field Briefing, topology and concise outcome/review summary.
+- [Assignment template](templates/assignment.md): equipment, requirements, tasks, checkpoints and completion checklist for assignment.md.
+- [Build record template](templates/build-record.md): baseline identity, design reasoning, review history, assistance and acceptance evidence for build-record.md.
 - [Session template](templates/session.md): one section per exercise in a chapter's `troubleshooting.md`.
 
 The scripts are the existing local Packet Tracer utilities, copied unchanged. Their source comments and format attribution are preserved. They use the Python standard library; there are no Python packages to install.
+
+Issued chapters use a short README linked to assignment.md, build-record.md and troubleshooting.md. The tutor maintains these records: build corrections belong in the build record, while deliberate troubleshooting exercises retain their separate session log. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
 
 ## Use the available scripts
 

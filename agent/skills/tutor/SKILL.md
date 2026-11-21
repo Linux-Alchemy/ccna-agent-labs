@@ -9,7 +9,7 @@ One agent assigns, reviews, tutors and records. The learner designs, configures 
 
 ## Open or resume
 
-Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position, the relevant chapter README and its troubleshooting.md. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
+Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements, build-record.md for design/review evidence, and troubleshooting.md for exercises. Older provisional chapters may still keep this material in their README; use it there until the chapter is issued in the new structure. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
 
 Read the latest entry in the root `bookmark.md` when present to recover the learner's stopping point. Keep it private and gitignored.
 
@@ -25,15 +25,22 @@ Read `local/learning-scope.md` privately and refresh it from its named progress 
 
 ## Chapter loop
 
-1. **Agree and assign.** Choose a believable business need within the private learning ceiling. Use the [chapter template](../../templates/chapter.md) and the assignment guidance below to issue a detailed, ordered brief. Later chapter placeholders are proposals, not instructions to build ahead.
+1. **Agree and assign.** Choose a believable business need within the private learning ceiling. Use the [chapter summary](../../templates/chapter.md), [assignment](../../templates/assignment.md) and [build record](../../templates/build-record.md) templates with the guidance below. Later chapter placeholders are proposals, not instructions to build ahead.
 2. **Review.** Inspect the submitted saved file and test evidence against each requirement. Give concise investigation pointers for failures, never the fault or corrective commands. The learner fixes and resubmits. Maintain the review and actual design reasoning yourself.
-3. **Accept.** When requirements pass, preserve the submitted file as that chapter's `network.pkt`; record hash, version/tag and evidence. Replace asset placeholders only with real files. Request a real topology capture if unavailable. Do not overwrite an existing accepted snapshot without an explicitly agreed revision.
+3. **Accept.** When requirements pass, preserve the submitted file as that chapter's `network.pkt`; record hash, version/tag and evidence in build-record.md and summarise the outcome in the chapter README. Replace asset placeholders only with real files. Request a real topology capture if unavailable. Do not overwrite an existing accepted snapshot without an explicitly agreed revision.
 4. **Offer practice.** Offer an optional run; on acceptance/request, load the sabotage skill in this same context. Usually 1–3 runs per chapter, never a quota. Require an accepted baseline and aligned scope.
 5. **Expand.** When the learner is ready, agree the next business change and reuse the last accepted network. Keep earlier snapshots intact.
 
 ## Write the assignment
 
-Use the chapter template's field briefing, objectives, equipment and starting conditions, access and required parameters, design decisions, numbered tasks, validation and completion check. Keep the assignment and tutor-maintained design/review records together in the chapter README.
+Keep each chapter in four linked documents:
+
+- **README.md:** title/status, Field Briefing, topology and accepted-lab link, and a concise outcome/review summary. Aim for roughly 300–500 words for a completed chapter. Keep evidence limitations and meaningful assistance visible; do not append tasks or review timelines here.
+- **assignment.md:** objectives, equipment and starting conditions, access and required parameters, learner design decisions, numbered tasks, validation, completion checklist and submission instructions. Link to the README's Field Briefing rather than copying the story.
+- **build-record.md:** baseline identity, actual design/addressing and reasoning, dated reviews, corrections, assistance and detailed acceptance evidence. Preserve the full history; distinguish historical pending findings from the current outcome.
+- **troubleshooting.md:** optional sabotage exercise sessions using the existing session template. Ordinary build problems and their resolution stay in the build record.
+
+Create the three chapter documents together when issuing a chapter, with reciprocal relative links. Each detail has one home: update the appropriate record and refresh the README summary when status changes. If reorganising an existing chapter, move its detail without discarding evidence, repair links to moved sections, and preserve accepted network files and tags.
 
 When `local/storyline.md` exists, read the premise and relevant chapter snippet for consistent names and brief narrative context. Keep that source file private; use its story in the assignment without treating narrative details as additional technical requirements or permission to expand learning scope.
 
@@ -67,4 +74,4 @@ Use the [session template](../../templates/session.md), one section per run in t
 - **Stop/abandon:** close as unresolved; retain evidence and answer privacy. No automatic reveal, repair or new fault.
 - **Answer requested:** disclose and record assistance; the learner may then repair or stop. Keep outcome answer-assisted/unresolved as appropriate.
 
-Maintain the root README's current-position section and the chapter's design/review/results; preserve authored narrative outside those sections. Capture the learner's reasons from evidence/conversation, never invent them or assign them report-writing homework. Leave absent screenshots and networks explicitly pending.
+Maintain the root README's current-position section, the chapter README's outcome summary, the assignment's completion checklist, and the build record's design/review/results. Preserve authored narrative outside those sections. Capture the learner's reasons from evidence/conversation, never invent them or assign them report-writing homework. Leave absent screenshots and networks explicitly pending.
