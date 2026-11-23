@@ -1,38 +1,22 @@
-# Chapter 2: The First Hires
+# Chapter 2 — The First Hires
 
-> **Status:** provisional planning placeholder; not an issued assignment.
+**Status** — Assignment issued November 23, 2026. Build submission pending.
 
-[Project overview](../../README.md) · [Previous chapter](../01-the-spare-room/README.md)
+[Project overview](../../README.md) · [Chapter 1](../01-the-spare-room/README.md) · [Assignment](assignment.md) · [Build record](build-record.md)
 
-## The business change
+## Field Briefing
 
-Two remote employees join the developer. They need access to headquarters, and the business is considering separate development and deployment servers.
+A few streamers pick up *Banners of Ashvale*, and Joe suddenly has more work than one spare room can handle. Marcus, an artist turned programmer, and Lena, who promises she can fix any bug “eventually,” join Copper Kobold Games. Both work from home.
 
-## Assignment — to be agreed
+Joe already has a development site. He wants a separate place to put the build the team should test. All three developers need to be able to tell which site they have opened. Joe still needs his workstation and cracked test phone to work on release day.
 
-The current direction is a home network for each remote worker and a second server at headquarters. Direct links will explicitly stand in for simulated site-to-site VPNs; configuring real VPNs is outside this project.
+## Chapter outline
 
-Before issuing the assignment, agree the addressing, access requirements, internet paths and acceptance checks. The internet path through headquarters versus independent site connections remains undecided. Reuse and extend the accepted Chapter 1 network.
+1. Design two home LANs and their routed links to headquarters.
+2. Bring Marcus online and prove the round trip to the existing development server. Repeat for Lena.
+3. Add the deployment server and verify both sites from all three desks.
+4. Verify the shared HQ internet path from each home and repeat the Chapter 1 service checks.
 
-## Topology and lab
+## Topology and accepted lab
 
-**Topology screenshot:** pending; add it after the build.
-
-**Accepted Packet Tracer file:** pending. Retain the learner’s chosen chapter filename when accepting the expanded network; preserve Chapter 1’s separate snapshot.
-
-**Baseline identity:** not assigned.
-
-## Design response
-
-Pending: addressing table, what changes from Chapter 1, what is retained, and Matt's reasoning. The tutor maintains this section.
-
-## Review and acceptance
-
-| Requirement | Evidence | Result |
-|---|---|---|
-| Assignment and scope agreed | Not yet defined | Pending |
-| Connectivity, service access and baseline checks | Define before building | Pending |
-
-## Troubleshooting
-
-No exercises have been run yet. Create the ticket index when an exercise is actually planned; its scope will depend on the accepted Chapter 2 network.
+Starting point: [accepted Spare Room lab](../01-the-spare-room/spare-room.pkt). The Chapter 2 topology capture, submitted lab and acceptance review are pending.

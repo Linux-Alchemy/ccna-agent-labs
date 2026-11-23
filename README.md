@@ -30,7 +30,7 @@ To keep the project honest, I'm keeping records, rather, the agent is keeping re
 - [Use the skills with your own agent](agent/README.md#use-with-your-own-agent) — Codex, Grok, Claude or another host.
 - [Skills](agent/skills/), [scripts](agent/scripts/) and [templates](agent/templates/) — the supporting agent materials.
 
-Issued chapters have a short README with the story, topology and outcome, linked to a detailed assignment, build record and troubleshooting index. Each ticket has its own report under the chapter's troubleshooting/ folder. Chapter 1 follows this structure; later chapters remain provisional.
+Issued chapters have a short README with the story, topology and outcome, linked to a detailed assignment and build record. A troubleshooting index is added when the first exercise is planned. Each ticket has its own report under the chapter's troubleshooting/ folder. Chapters 1 and 2 have been issued. Chapter 3 is provisional.
 
 ## Current status
 
@@ -38,6 +38,6 @@ Issued chapters have a short README with the story, topology and outcome, linked
 
 Acceptance combines saved-state inspection with Matt’s reported Packet Tracer connectivity, service and NAT tests. Tutoring assistance is recorded. The first publishable troubleshooting exercise, T001, is resolved without diagnostic hints; the accepted baseline is unchanged.
 
-**Next action:** choose another beginner/Tier 1 exercise or agree the next chapter when Matt is ready. The [completed T001 report](chapters/01-the-spare-room/troubleshooting/T001.md) has been reviewed and approved. Later chapter folders remain provisional.
+**Current work:** The [Chapter 2 assignment](chapters/02-the-first-hires/assignment.md) is issued. Both home offices use the existing HQ internet exit. A second Chapter 1 Tier 1 exercise is requested. The [T001 report](chapters/01-the-spare-room/troubleshooting/T001.md) is closed and approved.
 
 This is a project in progress, not a ready-to-run lab package.
