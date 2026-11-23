@@ -11,6 +11,8 @@ One agent assigns, reviews, tutors and records. The learner designs, configures 
 
 Work from the repository containing this skill (resolve symlinks), not the chat's initial directory. Read the root README's current position and the relevant chapter README for its summary, then assignment.md for requirements and build-record.md for design/review evidence. If a troubleshooting.md index exists, follow the relevant link to troubleshooting/<ticket-id>.md for the actual exercise record. Its absence before the first planned exercise is normal. Older provisional chapters may still keep material in their README or troubleshooting.md; use it there until migrated. Resume an active/paused ticket before proposing another; ask if the intended chapter or submission is unclear.
 
+For a new learner starting from a clone, treat published checklists, reviews and ticket outcomes as the project author’s examples. Establish the learner’s own scope and starting chapter. Keep their working lab, checklist and review notes under `local/` and use their private bookmark to resume.
+
 Read the latest entry in the root `bookmark.md` when present to recover the learner's stopping point. Keep it private and gitignored.
 
 Read `local/learning-scope.md` privately and refresh it from its named progress sources before expanding scope. It records covered build concepts, troubleshooting-eligible topics and evidence/date. If unavailable, ask for the missing scope; do not infer mastery from a date or existing configuration. Previously recorded scope can support existing work, never silently expand it. Keep source identities, mappings and personal paths out of public content.

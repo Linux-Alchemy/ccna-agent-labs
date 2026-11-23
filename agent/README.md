@@ -28,7 +28,7 @@ During review, the agent inspects the lab and gives investigation pointers; it d
 
 The scripts are the existing local Packet Tracer utilities, copied unchanged. Their source comments and format attribution are preserved. They use the Python standard library; there are no Python packages to install.
 
-Issued chapters use a short README linked to assignment.md and build-record.md. Add the troubleshooting.md index when the first exercise is planned or a scaffold is requested. The tutor maintains these records: build corrections belong in the build record, while each deliberate troubleshooting exercise has its own report under troubleshooting/. Ticket and resolution stay together; long logs may be expandable while the outcome, assistance and verification summary remain visible. Chapter 1 follows this structure; later provisional placeholders are adapted when their assignments are issued.
+Issued chapters use a short README linked to assignment.md and build-record.md. Add the troubleshooting.md index when the first exercise is planned or a scaffold is requested. The tutor maintains these records: build corrections belong in the build record, while each deliberate troubleshooting exercise has its own report under troubleshooting/. Ticket and resolution stay together; long logs may be expandable while the outcome, assistance and verification summary remain visible. Chapters 1 and 2 follow this structure. Future chapter placeholders are adapted when their assignments are issued.
 
 ## Use the available scripts
 
@@ -63,9 +63,9 @@ Codex is the tested host for this project. For Grok, Claude or another agent, us
 
 The full workflow needs file access, Python and git execution, plus Packet Tracer checks on your machine. A chat-only agent can discuss supplied material, but cannot edit your local lab or independently verify it. Attaching a skill does not grant those capabilities or hide its tool output.
 
-A starting prompt:
+For a first session in a fresh clone, try this prompt.
 
-> Read `agent/skills/tutor/SKILL.md` in my project at `<repo path>`, follow it as my lab tutor, and resume from the current chapter record. Ask for any missing scope information before assigning new work.
+> Read `agent/skills/tutor/SKILL.md` and use it as my lab tutor. This is my first run in this clone. Ask what networking topics I’ve covered, record my scope under `local/`, then give me the Chapter 1 brief and its first checkpoint. Keep my progress separate from the published example.
 
 ## Use with Codex
 

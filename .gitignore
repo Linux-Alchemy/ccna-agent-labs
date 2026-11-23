@@ -10,3 +10,6 @@
 # Generated Python files
 __pycache__/
 *.py[cod]
+
+# Standalone learner edition in preparation
+/starter-project/
